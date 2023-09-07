@@ -22,7 +22,7 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - "monitoring-example-pre-requisites"
+    - name: monitoring-example-pre-requisites
   interval: 1h
   retryInterval: 2m
   timeout: 10m
@@ -40,7 +40,7 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - "monitoring-example"
+    - name: monitoring-example
   interval: 1h
   retryInterval: 2m
   timeout: 10m
