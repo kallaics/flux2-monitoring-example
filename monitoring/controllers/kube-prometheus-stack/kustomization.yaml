@@ -5,6 +5,8 @@ resources:
   - namespace.yaml
   - repository.yaml
   - release.yaml
+generatorOptions:
+  disableNameSuffixHash: true
 configMapGenerator:
   - name: flux-kube-state-metrics-config
     files:
