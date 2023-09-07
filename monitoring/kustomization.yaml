@@ -11,6 +11,7 @@ generatorOptions:
   disableNameSuffixHash: true
 configMapGenerator:
   - name: flux-kube-state-metrics-config
+    namespace: monitoring
     files:
       - configs/custom-crds/kube-state-metrics-config.yaml
     options:
