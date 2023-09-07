@@ -14,10 +14,10 @@ configMapGenerator:
         grafana_dashboard: "1"
         app.kubernetes.io/part-of: flux
         app.kubernetes.io/component: monitoring
-  - name: flux-kube-state-metrics-config
-    files:
-      - custom-crds/kube-state-metrics-config.yaml
-    options:
-      labels:
-        app.kubernetes.io/part-of: flux
-        app.kubernetes.io/component: monitoring
+  #- name: flux-kube-state-metrics-config
+  #  files:
+  #    - custom-crds/kube-state-metrics-config.yaml
+  #  options:
+  #    labels:
+  #      app.kubernetes.io/part-of: flux
+  #      app.kubernetes.io/component: monitoring
