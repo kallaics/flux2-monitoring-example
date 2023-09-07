@@ -5,15 +5,15 @@ resources:
   - namespace.yaml
   - repository.yaml
   - release.yaml
-generatorOptions:
-  disableNameSuffixHash: true
-configMapGenerator:
-  - name: flux-kube-state-metrics-config
-    files:
-      - custom-crds/kube-state-metrics-config.yaml
-    options:
-      labels:
-        app.kubernetes.io/part-of: flux
-        app.kubernetes.io/component: monitoring
+#generatorOptions:
+#  disableNameSuffixHash: true
+#configMapGenerator:
+#  - name: flux-kube-state-metrics-config
+#    files:
+#      - custom-crds/kube-state-metrics-config.yaml
+#    options:
+#      labels:
+#        app.kubernetes.io/part-of: flux
+#        app.kubernetes.io/component: monitoring
 configurations:
   - kustomizeconfig.yaml
