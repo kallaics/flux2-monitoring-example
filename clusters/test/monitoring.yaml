@@ -5,7 +5,6 @@ metadata:
   name: monitoring-example
   namespace: flux-system
 spec:
-  targetNamespace: "monitoring"
   interval: 1h
   retryInterval: 2m
   timeout: 10m
