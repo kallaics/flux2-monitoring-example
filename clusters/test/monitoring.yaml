@@ -35,7 +35,7 @@ spec:
   patches:
     - patch: |
         - op: remove
-          path: /spec/template/spec/containers/0/volumeMounts/2/mountPropagation   
+          path: /spec/template/spec/containers/0/volumeMounts/3/mountPropagation   
       target:
         kind: DaemonSet
         name: kube-prometheus-stack-prometheus-node-exporter
