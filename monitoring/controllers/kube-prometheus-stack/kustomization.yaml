@@ -2,18 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: monitoring
 resources:
-  - namespace.yaml
   - repository.yaml
   - release.yaml
-#generatorOptions:
-#  disableNameSuffixHash: true
-#configMapGenerator:
-#  - name: flux-kube-state-metrics-config
-#    files:
-#      - custom-crds/kube-state-metrics-config.yaml
-#    options:
-#      labels:
-#        app.kubernetes.io/part-of: flux
-#        app.kubernetes.io/component: monitoring
 configurations:
   - kustomizeconfig.yaml
