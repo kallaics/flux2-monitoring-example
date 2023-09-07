@@ -13,7 +13,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./monitoring/pre-reuisites/
+  path: ./monitoring/pre-requisites/
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
