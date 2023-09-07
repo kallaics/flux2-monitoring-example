@@ -32,6 +32,14 @@ spec:
     kind: GitRepository
     name: flux-system
   path: ./monitoring/controllers/
+  patches:
+    - patch: |
+        - op: remove
+          path: /spec/template/spec/containers/0/volumeMounts/2/mountPropagation   
+      target:
+        kind: DaemonSet
+        name: kube-prometheus-stack-prometheus-node-exporter
+        namespace: monitoring
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
