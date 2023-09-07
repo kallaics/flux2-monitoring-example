@@ -7,13 +7,4 @@ resources:
   - controllers/
   - configs/dashboards/
   - configs/podmonitor/
-generatorOptions:
-  disableNameSuffixHash: true
-configMapGenerator:
-  - name: flux-kube-state-metrics-config
-    files:
-      - configs/custom-crds/kube-state-metrics-config.yaml
-    options:
-      labels:
-        app.kubernetes.io/part-of: flux
-        app.kubernetes.io/component: monitoring
+
